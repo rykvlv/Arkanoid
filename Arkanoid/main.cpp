@@ -1,8 +1,7 @@
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
-#include "ResourcePath.hpp"
+#include <iostream>
+#include "Game.hpp"
 
-int main()
-{
-
+int main(){
+    rykvlv::Game(800, 600, "Arkanoid");
+    return EXIT_SUCCESS;
 }
