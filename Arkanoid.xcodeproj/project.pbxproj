@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2AA79D5425C6EAC100723BBF /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D5325C6EAC100723BBF /* ResourcePath.mm */; };
 		2AA79D5725C6EAC100723BBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D5625C6EAC100723BBF /* main.cpp */; };
+		2AA79D6C25C6EDAF00723BBF /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D6A25C6EDAF00723BBF /* StateMachine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,9 @@
 		2AA79D5325C6EAC100723BBF /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		2AA79D5525C6EAC100723BBF /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		2AA79D5625C6EAC100723BBF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2AA79D6925C6EBE400723BBF /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		2AA79D6A25C6EDAF00723BBF /* StateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		2AA79D6B25C6EDAF00723BBF /* StateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,9 @@
 				2AA79D5325C6EAC100723BBF /* ResourcePath.mm */,
 				2AA79D5525C6EAC100723BBF /* ResourcePath.hpp */,
 				2AA79D5625C6EAC100723BBF /* main.cpp */,
+				2AA79D6925C6EBE400723BBF /* State.h */,
+				2AA79D6A25C6EDAF00723BBF /* StateMachine.cpp */,
+				2AA79D6B25C6EDAF00723BBF /* StateMachine.hpp */,
 				2AA79D5125C6EAC100723BBF /* Supporting Files */,
 			);
 			path = Arkanoid;
@@ -155,6 +162,7 @@
 			files = (
 				2AA79D5725C6EAC100723BBF /* main.cpp in Sources */,
 				2AA79D5425C6EAC100723BBF /* ResourcePath.mm in Sources */,
+				2AA79D6C25C6EDAF00723BBF /* StateMachine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
