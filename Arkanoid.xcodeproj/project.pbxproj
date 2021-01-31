@@ -11,6 +11,7 @@
 		2AA79D5725C6EAC100723BBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D5625C6EAC100723BBF /* main.cpp */; };
 		2AA79D6C25C6EDAF00723BBF /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D6A25C6EDAF00723BBF /* StateMachine.cpp */; };
 		2AA79D7125C6F7D400723BBF /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D6F25C6F7D400723BBF /* AssetManager.cpp */; };
+		2AA79D7525C6FA9500723BBF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D7325C6FA9500723BBF /* InputManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		2AA79D6B25C6EDAF00723BBF /* StateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
 		2AA79D6F25C6F7D400723BBF /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		2AA79D7025C6F7D400723BBF /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
+		2AA79D7325C6FA9500723BBF /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		2AA79D7425C6FA9500723BBF /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 				2AA79D5525C6EAC100723BBF /* ResourcePath.hpp */,
 				2AA79D5625C6EAC100723BBF /* main.cpp */,
 				2AA79D6F25C6F7D400723BBF /* AssetManager.cpp */,
+				2AA79D7325C6FA9500723BBF /* InputManager.cpp */,
+				2AA79D7425C6FA9500723BBF /* InputManager.hpp */,
 				2AA79D7025C6F7D400723BBF /* AssetManager.hpp */,
 				2AA79D6925C6EBE400723BBF /* State.h */,
 				2AA79D6A25C6EDAF00723BBF /* StateMachine.cpp */,
@@ -169,6 +174,7 @@
 				2AA79D5725C6EAC100723BBF /* main.cpp in Sources */,
 				2AA79D5425C6EAC100723BBF /* ResourcePath.mm in Sources */,
 				2AA79D6C25C6EDAF00723BBF /* StateMachine.cpp in Sources */,
+				2AA79D7525C6FA9500723BBF /* InputManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
