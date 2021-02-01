@@ -1,13 +1,12 @@
-//
-//  DEFINITIONS.h
-//  Arkanoid
-//
-//  Created by Роман Яковлев on 01.02.2021.
-//  Copyright © 2021 Роман Яковлев. All rights reserved.
-//
+#pragma once
 
-#ifndef DEFINITIONS_h
-#define DEFINITIONS_h
+#define SCREEN_WIDTH 1600
+#define SCREEN_HEIGHT 1200
 
+#define SPLASH_STATE_SHOW_TIME 0.1
 
-#endif /* DEFINITIONS_h */
+#define SPLASH_SCENE_BACKGROUND_FILEPATH "res/images/background.png"
+#define MAIN_MENU_BACKGROUND_FILEPATH "res/images/background.png"
+#define POINTER_TEXTURE_FILEPATH "res/images/pointer.png"
+
+#define FONT_FILEPATH "res/fonts/baloo.ttf"

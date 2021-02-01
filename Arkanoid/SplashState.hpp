@@ -3,10 +3,11 @@
 #include "State.h"
 #include "Game.hpp"
 
+
 namespace rykvlv {
-    class MainMenuState : public State{
+    class SplashState : public State{
     public:
-        MainMenuState(std::shared_ptr<GameData> data);
+        SplashState(std::shared_ptr<GameData> data);
         void Init();
         
         void HandleInput();
@@ -18,7 +19,7 @@ namespace rykvlv {
         
         sf::Clock _clock;
         sf::Sprite _background;
-        sf::Sprite _pointer;
+
     };
 }
 

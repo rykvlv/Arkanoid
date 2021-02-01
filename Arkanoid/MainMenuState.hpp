@@ -1,14 +1,31 @@
-//
-//  MainMenuState.hpp
-//  Arkanoid
-//
-//  Created by Роман Яковлев on 01.02.2021.
-//  Copyright © 2021 Роман Яковлев. All rights reserved.
-//
+#pragma once
+#include <SFML/Graphics.hpp>
+#include "State.h"
+#include "Game.hpp"
+#include "DEFINITIONS.h"
 
-#ifndef MainMenuState_hpp
-#define MainMenuState_hpp
-
-#include <stdio.h>
-
-#endif /* MainMenuState_hpp */
+namespace rykvlv {
+    class MainMenuState : public State{
+    public:
+        MainMenuState(std::shared_ptr<GameData> data);
+        void Init();
+        
+        void HandleInput();
+        void Update(float dt);
+        void Draw(float dt);
+    private:
+        std::shared_ptr<GameData> _data;
+        sf::Clock _clock;
+        
+        sf::Font _font;
+        
+        sf::Sprite _background;
+        sf::Sprite _pointer;
+        
+        sf::Text _mainText;
+        sf::Text _playGameText;
+        sf::Text _settngsText;
+        
+        short _pointerPosition;
+    };
+}

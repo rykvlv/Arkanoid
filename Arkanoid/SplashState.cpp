@@ -1,22 +1,20 @@
 #include <sstream>
 #include <iostream>
+#include "SplashState.hpp"
 #include "MainMenuState.hpp"
 #include "DEFINITIONS.h"
 
 namespace rykvlv{
-    MainMenuState::MainMenuState(std::shared_ptr<GameData> data) : _data(data){
-
-    }
-
-    void MainMenuState::Init(){
-        _data->assets.LoadTexture("Main Menu State Background", resourcePath() + MAIN_MENU_SCENE_BACKGROUND_FILEPATH);
-        _background.setTexture(this->_data->assets.GetTexture("Main Menu State Background"));
+    SplashState::SplashState(std::shared_ptr<GameData> data) : _data(data){
         
-        _data->assets.LoadTexture("Pointer Texture", resourcePath() + POINTER_TEXTURE_FILEPATH);
-        _pointer.setTexture(this->_data->assets.GetTexture("Pointer Texture"));
     }
 
-    void MainMenuState::HandleInput(){
+    void SplashState::Init(){
+        _data->assets.LoadTexture("Splash State Background", resourcePath() + SPLASH_SCENE_BACKGROUND_FILEPATH);
+        _background.setTexture(this->_data->assets.GetTexture("Splash State Background"));
+    }
+
+    void SplashState::HandleInput(){
         sf::Event event;
         
         while(_data->window.pollEvent(event)){
@@ -26,16 +24,16 @@ namespace rykvlv{
         }
     }
 
-    void MainMenuState::Update(float dt){
-        if (_clock.getElapsedTime().asSeconds(); > MAIN_MENU_STATE_SHOW_TIME){
-            
-            std::cout << "Go To Main Menu" << std::endl;
+    void SplashState::Update(float dt){
+        if (_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME){
+            std::cout << "Going to main menu" << std::endl;
+            this->_data->machine.AddState(std::unique_ptr<State>(new MainMenuState(this->_data)));
         }
     }
 
-    void MainMenuState::Draw(float dt){
+    void SplashState::Draw(float dt){
         _data->window.clear();
-        _data->window.draw(_background);
+//        _data->window.draw(_background);
         _data->window.display();
     }
 }

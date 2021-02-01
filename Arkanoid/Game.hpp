@@ -6,6 +6,7 @@
 #include "StateMachine.hpp"
 #include "AssetManager.hpp"
 #include "InputManager.hpp"
+#include "ResourcePath.hpp"
 
 namespace rykvlv{
     struct GameData{

@@ -12,8 +12,24 @@
 		2AA79D7125C6F7D400723BBF /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D6F25C6F7D400723BBF /* AssetManager.cpp */; };
 		2AA79D7525C6FA9500723BBF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D7325C6FA9500723BBF /* InputManager.cpp */; };
 		2AA79D7A25C7002E00723BBF /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D7825C7002E00723BBF /* Game.cpp */; };
-		2AA79D7D25C70ABB00723BBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D7C25C70ABB00723BBF /* main.cpp */; };
+		2AA79D8325C70F0400723BBF /* res in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AA79D7F25C70E5100723BBF /* res */; };
+		2AA79D8E25C70FE000723BBF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D8C25C70FE000723BBF /* SplashState.cpp */; };
+		2AA79D9425C7100E00723BBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D9325C7100E00723BBF /* main.cpp */; };
+		2AA79D9E25C7280000723BBF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D9C25C7280000723BBF /* MainMenuState.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2AA79D8225C70EF800723BBF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				2AA79D8325C70F0400723BBF /* res in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2AA79D4E25C6EAC100723BBF /* Arkanoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arkanoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +45,13 @@
 		2AA79D7425C6FA9500723BBF /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
 		2AA79D7825C7002E00723BBF /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		2AA79D7925C7002E00723BBF /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
-		2AA79D7C25C70ABB00723BBF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2AA79D7F25C70E5100723BBF /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		2AA79D8525C70F3500723BBF /* DEFINITIONS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEFINITIONS.h; sourceTree = "<group>"; };
+		2AA79D8C25C70FE000723BBF /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
+		2AA79D8D25C70FE000723BBF /* SplashState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SplashState.hpp; sourceTree = "<group>"; };
+		2AA79D9325C7100E00723BBF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2AA79D9C25C7280000723BBF /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
+		2AA79D9D25C7280000723BBF /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenuState.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,19 +84,25 @@
 		2AA79D5025C6EAC100723BBF /* Arkanoid */ = {
 			isa = PBXGroup;
 			children = (
+				2AA79D7F25C70E5100723BBF /* res */,
 				2AA79D5325C6EAC100723BBF /* ResourcePath.mm */,
+				2AA79D9325C7100E00723BBF /* main.cpp */,
 				2AA79D5525C6EAC100723BBF /* ResourcePath.hpp */,
 				2AA79D6F25C6F7D400723BBF /* AssetManager.cpp */,
+				2AA79D8C25C70FE000723BBF /* SplashState.cpp */,
+				2AA79D8D25C70FE000723BBF /* SplashState.hpp */,
+				2AA79D9C25C7280000723BBF /* MainMenuState.cpp */,
+				2AA79D9D25C7280000723BBF /* MainMenuState.hpp */,
 				2AA79D7025C6F7D400723BBF /* AssetManager.hpp */,
 				2AA79D7325C6FA9500723BBF /* InputManager.cpp */,
 				2AA79D7425C6FA9500723BBF /* InputManager.hpp */,
 				2AA79D7825C7002E00723BBF /* Game.cpp */,
 				2AA79D7925C7002E00723BBF /* Game.hpp */,
+				2AA79D8525C70F3500723BBF /* DEFINITIONS.h */,
 				2AA79D6925C6EBE400723BBF /* State.h */,
 				2AA79D6A25C6EDAF00723BBF /* StateMachine.cpp */,
 				2AA79D6B25C6EDAF00723BBF /* StateMachine.hpp */,
 				2AA79D5125C6EAC100723BBF /* Supporting Files */,
-				2AA79D7C25C70ABB00723BBF /* main.cpp */,
 			);
 			path = Arkanoid;
 			sourceTree = "<group>";
@@ -98,6 +126,7 @@
 				2AA79D4A25C6EAC100723BBF /* Frameworks */,
 				2AA79D4B25C6EAC100723BBF /* Resources */,
 				2AA79D4C25C6EAC100723BBF /* ShellScript */,
+				2AA79D8225C70EF800723BBF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -177,8 +206,10 @@
 			files = (
 				2AA79D7125C6F7D400723BBF /* AssetManager.cpp in Sources */,
 				2AA79D5425C6EAC100723BBF /* ResourcePath.mm in Sources */,
-				2AA79D7D25C70ABB00723BBF /* main.cpp in Sources */,
 				2AA79D6C25C6EDAF00723BBF /* StateMachine.cpp in Sources */,
+				2AA79D8E25C70FE000723BBF /* SplashState.cpp in Sources */,
+				2AA79D9425C7100E00723BBF /* main.cpp in Sources */,
+				2AA79D9E25C7280000723BBF /* MainMenuState.cpp in Sources */,
 				2AA79D7525C6FA9500723BBF /* InputManager.cpp in Sources */,
 				2AA79D7A25C7002E00723BBF /* Game.cpp in Sources */,
 			);
