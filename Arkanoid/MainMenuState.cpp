@@ -1,4 +1,6 @@
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
+#include "SettingsState.hpp"
 #include <thread>
 #include <chrono>
 #include <iostream>
@@ -50,9 +52,11 @@ namespace rykvlv{
             if (sf::Event::KeyPressed == event.type && event.key.code == sf::Keyboard::Enter) {
                 switch(_pointerPosition){
                     case 1:
-                        _data->machine.AddState(<#std::unique_ptr<State> newState#>);
+                        _data->machine.AddState(std::unique_ptr<State>(new GameState(this->_data)));
+                        break;
                     case 2:
-                        _data->machine.AddState(<#std::unique_ptr<State> newState#>);
+                        _data->machine.AddState(std::unique_ptr<State>(new SettingsState(this->_data)));
+                        break;
                 }
             }
         }

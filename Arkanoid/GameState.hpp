@@ -2,15 +2,14 @@
 #include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Game.hpp"
-#include "SplashState.hpp"
-#include "MainMenuState.hpp"
-#include "DEFINITIONS.h"
+#include "Platform.hpp"
+#include "Ball.hpp"
 
 
 namespace rykvlv {
-    class SplashState : public State{
+    class GameState : public State{
     public:
-        SplashState(std::shared_ptr<GameData> data);
+        GameState(std::shared_ptr<GameData> data);
         void Init();
         
         void HandleInput();
@@ -19,10 +18,10 @@ namespace rykvlv {
         
     private:
         std::shared_ptr<GameData> _data;
-        
-        sf::Clock _clock;
+
         sf::Sprite _background;
+        Platform platform;
+        Ball ball;
 
     };
 }
-

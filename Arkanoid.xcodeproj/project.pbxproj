@@ -16,6 +16,10 @@
 		2AA79D8E25C70FE000723BBF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D8C25C70FE000723BBF /* SplashState.cpp */; };
 		2AA79D9425C7100E00723BBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D9325C7100E00723BBF /* main.cpp */; };
 		2AA79D9E25C7280000723BBF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79D9C25C7280000723BBF /* MainMenuState.cpp */; };
+		2AA79DA325C7E2DB00723BBF /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79DA125C7E2DB00723BBF /* GameState.cpp */; };
+		2AA79DA725C7E3CB00723BBF /* SettingsState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79DA525C7E3CB00723BBF /* SettingsState.cpp */; };
+		2AA79DAD25C848F800723BBF /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79DAB25C848F800723BBF /* Platform.cpp */; };
+		2AA79DB225C851A500723BBF /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA79DB025C851A500723BBF /* Ball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +56,14 @@
 		2AA79D9325C7100E00723BBF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2AA79D9C25C7280000723BBF /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
 		2AA79D9D25C7280000723BBF /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenuState.hpp; sourceTree = "<group>"; };
+		2AA79DA125C7E2DB00723BBF /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		2AA79DA225C7E2DB00723BBF /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
+		2AA79DA525C7E3CB00723BBF /* SettingsState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SettingsState.cpp; sourceTree = "<group>"; };
+		2AA79DA625C7E3CB00723BBF /* SettingsState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SettingsState.hpp; sourceTree = "<group>"; };
+		2AA79DAB25C848F800723BBF /* Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Platform.cpp; sourceTree = "<group>"; };
+		2AA79DAC25C848F800723BBF /* Platform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Platform.hpp; sourceTree = "<group>"; };
+		2AA79DB025C851A500723BBF /* Ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		2AA79DB125C851A500723BBF /* Ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ball.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +103,16 @@
 				2AA79D6F25C6F7D400723BBF /* AssetManager.cpp */,
 				2AA79D8C25C70FE000723BBF /* SplashState.cpp */,
 				2AA79D8D25C70FE000723BBF /* SplashState.hpp */,
+				2AA79DAB25C848F800723BBF /* Platform.cpp */,
+				2AA79DAC25C848F800723BBF /* Platform.hpp */,
 				2AA79D9C25C7280000723BBF /* MainMenuState.cpp */,
 				2AA79D9D25C7280000723BBF /* MainMenuState.hpp */,
+				2AA79DA525C7E3CB00723BBF /* SettingsState.cpp */,
+				2AA79DA625C7E3CB00723BBF /* SettingsState.hpp */,
+				2AA79DA125C7E2DB00723BBF /* GameState.cpp */,
+				2AA79DA225C7E2DB00723BBF /* GameState.hpp */,
+				2AA79DB025C851A500723BBF /* Ball.cpp */,
+				2AA79DB125C851A500723BBF /* Ball.hpp */,
 				2AA79D7025C6F7D400723BBF /* AssetManager.hpp */,
 				2AA79D7325C6FA9500723BBF /* InputManager.cpp */,
 				2AA79D7425C6FA9500723BBF /* InputManager.hpp */,
@@ -204,14 +224,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA79DB225C851A500723BBF /* Ball.cpp in Sources */,
 				2AA79D7125C6F7D400723BBF /* AssetManager.cpp in Sources */,
 				2AA79D5425C6EAC100723BBF /* ResourcePath.mm in Sources */,
+				2AA79DA725C7E3CB00723BBF /* SettingsState.cpp in Sources */,
 				2AA79D6C25C6EDAF00723BBF /* StateMachine.cpp in Sources */,
 				2AA79D8E25C70FE000723BBF /* SplashState.cpp in Sources */,
 				2AA79D9425C7100E00723BBF /* main.cpp in Sources */,
 				2AA79D9E25C7280000723BBF /* MainMenuState.cpp in Sources */,
 				2AA79D7525C6FA9500723BBF /* InputManager.cpp in Sources */,
+				2AA79DA325C7E2DB00723BBF /* GameState.cpp in Sources */,
 				2AA79D7A25C7002E00723BBF /* Game.cpp in Sources */,
+				2AA79DAD25C848F800723BBF /* Platform.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
