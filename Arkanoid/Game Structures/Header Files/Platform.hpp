@@ -9,12 +9,12 @@ namespace rykvlv{
         
         void update();
         
-        int x();
-        int y();
-        int left();
-        int right();
-        int top();
-        int bottom();
+        float x();
+        float y();
+        float left();
+        float right();
+        float top();
+        float bottom();
     };
 }
 

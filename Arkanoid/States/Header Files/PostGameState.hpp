@@ -8,21 +8,18 @@
 
 
 namespace rykvlv {
-    class SplashState : public State{
+    class PostGameState : public State{
     public:
-        SplashState(std::shared_ptr<GameData> data);
+        PostGameState(std::shared_ptr<GameData> data);
         void Init();
         
         void HandleInput();
-        void Update(float dt);
-        void Draw(float dt);
+        void Update();
+        void Draw();
         
     private:
         std::shared_ptr<GameData> _data;
-        
-        sf::Clock _clock;
-        sf::Sprite _background;
 
+        sf::Sprite _background;
     };
 }
-

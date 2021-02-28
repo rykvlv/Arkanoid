@@ -13,7 +13,6 @@ namespace rykvlv{
         if (left() < 0) velocity.x = BALL_VELOCITY;
         if (right() > SCREEN_WIDTH) velocity.x = -BALL_VELOCITY;
         if (bottom() < 130) velocity.y = BALL_VELOCITY;
-        if (top() > SCREEN_HEIGHT) velocity.y = -BALL_VELOCITY;
     }
 
     float Ball::x(){

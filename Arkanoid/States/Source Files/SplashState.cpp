@@ -2,7 +2,6 @@
 #include <iostream>
 #include "SplashState.hpp"
 #include "MainMenuState.hpp"
-#include "DEFINITIONS.h"
 
 namespace rykvlv{
     SplashState::SplashState(std::shared_ptr<GameData> data) : _data(data){
@@ -24,14 +23,14 @@ namespace rykvlv{
         }
     }
 
-    void SplashState::Update(float dt){
+    void SplashState::Update(){
         if (_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME){
             std::cout << "Going to main menu" << std::endl;
             this->_data->machine.AddState(std::unique_ptr<State>(new MainMenuState(this->_data)));
         }
     }
 
-    void SplashState::Draw(float dt){
+    void SplashState::Draw(){
         _data->window.clear();
 //        _data->window.draw(_background);
         _data->window.display();

@@ -14,6 +14,10 @@ namespace rykvlv{
         sf::RenderWindow window;
         AssetManager assets;
         InputManager input;
+        int score;
+        int lifes;
+        bool isSoundOn = true;
+        bool isMouse = true;
     };
 
     class Game{

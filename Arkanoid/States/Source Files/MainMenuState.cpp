@@ -17,11 +17,13 @@ namespace rykvlv{
         _data->assets.LoadFont("Font", resourcePath() + FONT_FILEPATH);
         
         _background.setTexture(this->_data->assets.GetTexture("Main Menu Texture"));
-        _pointer.setTexture(this->_data->assets.GetTexture("Pointer Texture"));
       
+        _pointer.setFont(this->_data->assets.GetFont("Font"));
+        _pointer.setCharacterSize(70);
+        _pointer.setString(">");
         _mainText.setFont(this->_data->assets.GetFont("Font"));
-        _mainText.setCharacterSize(120);
-        _mainText.setPosition(550, 290);
+        _mainText.setCharacterSize(200);
+        _mainText.setPosition(370, 90);
         _mainText.setString("Arkanoid");
         _playGameText.setFont(this->_data->assets.GetFont("Font"));
         _playGameText.setCharacterSize(70);
@@ -43,7 +45,7 @@ namespace rykvlv{
                 _data->window.close();
             }
             
-            if (sf::Event::KeyPressed == event.type && event.key.code == sf::Keyboard::Down && _pointerPosition <2){
+            if (sf::Event::KeyPressed == event.type && event.key.code == sf::Keyboard::Down && _pointerPosition < 2){
                 _pointerPosition++;
             } else if (sf::Event::KeyPressed == event.type && event.key.code == sf::Keyboard::Up && _pointerPosition > 1){
                 _pointerPosition--;
@@ -62,15 +64,18 @@ namespace rykvlv{
         }
     }
 
-    void MainMenuState::Update(float dt){
-        if (_pointerPosition == 1) {
-            _pointer.setPosition(577, 476);
-        } else if (_pointerPosition == 2){
-            _pointer.setPosition(577, 545);
+    void MainMenuState::Update(){
+        switch (_pointerPosition) {
+            case 1:
+                _pointer.setPosition(577, 451);
+                break;
+            case 2:
+                _pointer.setPosition(577, 522);
+                break;
         }
     }
 
-    void MainMenuState::Draw(float dt){
+    void MainMenuState::Draw(){
         _data->window.clear();
         _data->window.draw(_background);
         _data->window.draw(_mainText);

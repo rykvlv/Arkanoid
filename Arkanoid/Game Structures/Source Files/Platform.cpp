@@ -14,27 +14,27 @@ namespace rykvlv{
         Platform::shape.move(velocity);
     }
 
-    int Platform::x(){
+    float Platform::x(){
         return Platform::shape.getPosition().x;
     }
 
-    int Platform::y(){
+    float Platform::y(){
         return Platform::shape.getPosition().y;
     }
 
-    int Platform::left(){
+    float Platform::left(){
         return x() - shape.getSize().x / 2;
     }
 
-    int Platform::right(){
+    float Platform::right(){
         return x() + shape.getSize().x / 2;
     }
 
-    int Platform::top(){
+    float Platform::top(){
         return y() - shape.getSize().y / 2;
     }
 
-    int Platform::bottom(){
+    float Platform::bottom(){
         return y() + shape.getSize().y / 2;
     }
 }

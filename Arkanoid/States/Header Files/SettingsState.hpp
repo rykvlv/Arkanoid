@@ -11,13 +11,16 @@ namespace rykvlv {
         void Init();
         
         void HandleInput();
-        void Update(float dt);
-        void Draw(float dt);
+        void Update();
+        void Draw();
         
     private:
         std::shared_ptr<GameData> _data;
-
+        
         sf::Sprite _background;
-
+        
+        sf::Text _controllerText;
+        sf::Text _soundText;
+        sf::Text _resolutionText;
     };
 }

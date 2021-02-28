@@ -25,11 +25,11 @@ namespace rykvlv{
             accumulator += frameTime;
             while (accumulator >= dt) {
                 this->_data->machine.GetActiveState()->HandleInput();
-                this->_data->machine.GetActiveState()->Update(dt);
+                this->_data->machine.GetActiveState()->Update();
                 accumulator -= dt;
             }
             interpolation = accumulator / dt;
-            this->_data->machine.GetActiveState()->Draw(interpolation);
+            this->_data->machine.GetActiveState()->Draw();
         }
     }
 }
