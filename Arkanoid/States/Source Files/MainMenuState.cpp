@@ -1,9 +1,6 @@
 #include "MainMenuState.hpp"
 #include "GameState.hpp"
 #include "SettingsState.hpp"
-#include <thread>
-#include <chrono>
-#include <iostream>
 
 namespace rykvlv{
     MainMenuState::MainMenuState(std::shared_ptr<GameData> data) : _data(data){
@@ -11,27 +8,28 @@ namespace rykvlv{
     }
 
     void MainMenuState::Init(){
+#ifdef __APPLE__
         _data->assets.LoadTexture("Main Menu Texture", resourcePath() + MAIN_MENU_BACKGROUND_FILEPATH);
-        _data->assets.LoadTexture("Pointer Texture", resourcePath() + POINTER_TEXTURE_FILEPATH);
-        
         _data->assets.LoadFont("Font", resourcePath() + FONT_FILEPATH);
-        
+#else
+        _data->assets.LoadTexture("Main Menu Texture", MAIN_MENU_BACKGROUND_FILEPATH);
+        _data->assets.LoadFont("Font", FONT_FILEPATH);
+#endif
         _background.setTexture(this->_data->assets.GetTexture("Main Menu Texture"));
-      
         _pointer.setFont(this->_data->assets.GetFont("Font"));
         _pointer.setCharacterSize(70);
         _pointer.setString(">");
         _mainText.setFont(this->_data->assets.GetFont("Font"));
         _mainText.setCharacterSize(200);
-        _mainText.setPosition(370, 90);
+        _mainText.setPosition(570, 90);
         _mainText.setString("Arkanoid");
         _playGameText.setFont(this->_data->assets.GetFont("Font"));
         _playGameText.setCharacterSize(70);
-        _playGameText.setPosition(640, 450);
+        _playGameText.setPosition(840, 450);
         _playGameText.setString("start game");
         _settngsText.setFont(this->_data->assets.GetFont("Font"));
         _settngsText.setCharacterSize(70);
-        _settngsText.setPosition(690, 520);
+        _settngsText.setPosition(890, 520);
         _settngsText.setString("settings");
         
         _pointerPosition = 1;
@@ -67,10 +65,10 @@ namespace rykvlv{
     void MainMenuState::Update(){
         switch (_pointerPosition) {
             case 1:
-                _pointer.setPosition(577, 451);
+                _pointer.setPosition(777, 451);
                 break;
             case 2:
-                _pointer.setPosition(577, 522);
+                _pointer.setPosition(777, 522);
                 break;
         }
     }

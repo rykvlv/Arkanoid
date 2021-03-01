@@ -19,8 +19,13 @@ namespace rykvlv {
         
         sf::Sprite _background;
         
+        int _pointerPosition;
+        
+        sf::Text _pointerText;
         sf::Text _controllerText;
         sf::Text _soundText;
         sf::Text _resolutionText;
+        sf::Text _backText;
+
     };
 }

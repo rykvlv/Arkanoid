@@ -1,7 +1,7 @@
-#include "Game.hpp"
+#include "Header Files/Game.hpp"
 #include "DEFINITIONS.h"
 
 int main(){
-    rykvlv::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Arkanoid");
+    rykvlv::Game("Arkanoid");
     return EXIT_SUCCESS;
 }
